@@ -83,7 +83,6 @@ class file_sorter:
         with open(properties_path,"rb") as f:
             properties=pickle.load(f)
 
-        
         #All Files & Suffixes in Directory
         files =[x.name for x in path.iterdir() if x.is_file()]
         sufx=[x.suffix for x in path.iterdir() if x.is_file()]
@@ -95,6 +94,7 @@ class file_sorter:
             except:
                 print(properties[i][0]," File Already Exist...Skipping Its Creation")
 
+        #Sorting
         for s in range(0,len(sufx)):
             for ir,row in enumerate(properties):
                 for elements in row[1:]:
@@ -117,6 +117,7 @@ class menu:
 
             elif(ch == 1):
                 file_sorter.sort()
+                print("Folder Sorted")
 
             elif(ch == 2):
                 x = input("Enter new Path: ")
