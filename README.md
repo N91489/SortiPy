@@ -47,12 +47,16 @@ SortiPy is a Python script that organizes files into folders based on their exte
     - **Change Folder Properties**: 
         - Add or remove folders and their associated extensions.
 
-2. **Function Descriptions**: Refer to the `functions_functionality.txt` file for detailed explanations of what each function in the script does.
+2. **Data Storage**: SortiPy stores user preferences in the `SortiPy-Data` directory, which contains:
+    - `folder_propertise.pickle`: Stores folder names and associated file extensions.
+    - `path.pickle`: Stores the path of the directory where files are to be sorted.
+
+3. **Function Descriptions**: Refer to the [functions_functionality.txt](https://github.com/N91489/SortiPy/blob/main/functions_functionality.txt) file for detailed explanations of what each function in the script does.
 
 ## Contributing
 
-Feel free to fork this repository, create new branches, and submit pull requests, any work on adding new functionality and a GUI would be really appreciated. Contributions are welcome!
+Feel free to fork this repository, create new branches and submit pull requests. Any Regarding new functionality & GUI would be highly appreciated.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the GPL-3.0 License. See the [LICENSE](https://github.com/N91489/SortiPy/blob/main/LICENSE) for more details.
