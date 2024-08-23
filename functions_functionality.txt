@@ -1,10 +1,11 @@
+class.function(args) --> return value
+
 file_sorter.path() --> path location
 file_sorter.path(x) --> set x as new path
 
 file_sorter.properties() --> return properties matrix 
 file_sorter.properties(0) --> return transposed properties matrix
-file_sorter.properties(1,name,extension[seperated with ,]) --> add folder & extension
-file_sorter.properties(2,name) --> remove folder & extension
+file_sorter.properties(1, folder_name, extensions seperated with ',') --> add folder & extension
+file_sorter.properties(2,folder_name) --> remove folder & extension
 
 file_sorter.sort() --> sort
-
